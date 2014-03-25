@@ -23,6 +23,9 @@
     [[NSApp mainWindow] miniaturize:[NSApp mainWindow]];
 }
 
+- (void) restore {
+}
+
 - (void) toggleFullscreen {
     [[NSApp mainWindow] toggleFullScreen:[NSApp mainWindow]];
 }
