@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "WindowController.h"
 
 #define APP_NOTICE_NOTIFICATION @"Notice"
 
@@ -14,7 +15,11 @@
     
 }
 
+@property (nonatomic, retain) WebView *webView;
+
+- (id) initWithWebView:(WebView *)view;
 - (void) notify:(NSDictionary*)message;
+- (void) close:(NSString*)notificationId;
 + (BOOL) available;
 
 @end
